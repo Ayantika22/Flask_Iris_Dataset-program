@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML Deployment</title>
+
+
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<body>
+
+
+<center>
+ <div class="login">
+	<h1>Iris Class Predictor</h1>   
+<!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+
+    	 
+    	<div class="field">
+         <label for="Sepal Length" class="label">Sepal Length</label>
+          <div class="control">
+          <input type="text" name="sepal_length" class="input" placeholder="Number between 4 and 8" min="4" max="8" size="22" step="0.1">
+          </div>
+          </div> <br> <br> 
+         <div class="field">
+         <label for="text" class="label">Sepal Width</label>
+           <div class="control">
+          <input type="text" name="sepal_width" class="input" placeholder="Number between 2 and 5" min="2" max="5" size="22" step="0.1">
+            </div>
+         </div><br> <br>
+         </div>
+          <div class="column">
+       <div class="field">
+         <label for="Petal Length" class="label">Petal Length</label>
+          <div class="control">
+          <input type="text" name="petal_length" class="input" placeholder="Number between 0 and 7" min="0" max="7" size="22" step="0.1">
+          </div>
+           </div><br> <br>
+          <div class="field">
+          <label for="Petal Width" class="label">Petal Width</label>
+           <div class="control">
+            <input type="text" name="petal_width" class="input" placeholder="Number between 0 and 3" min="0" max="3" size="22" step="0.1">
+             </div>
+            </div><br> <br>
+
+        <button  type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+       <button class="button" type="reset">Clear</button>
+        
+        
+
+    </form>
+<br>
+<br>
+    
+   {{ prediction_text }}
+ </div>
+</center>
+</body>
+</html>

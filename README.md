@@ -18,7 +18,7 @@ First Run the model.py
 
 Then app.py
 
-Path for running the app User/ User_Name/ Anaconda3/ Folder name/ Paste Flask Glass from github
+Path for running the app User/ User_Name/ Anaconda3/ Folder name/ Paste Flask Iris from github
 
 Unzip
 

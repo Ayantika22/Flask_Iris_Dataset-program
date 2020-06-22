@@ -22,7 +22,7 @@ Path for running the app User/ User_Name/ Anaconda3/ Folder name/ Paste Flask Ir
 
 Unzip
 
-Open Spyder console . Then flask-glass folder
+Open Spyder console . Then flask-Seed folder
 
 After running app.py Copy the 127.0.0.1:5000/ using mouse button
 
